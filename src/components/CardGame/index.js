@@ -1,5 +1,3 @@
-// Para pesquisar: JSX
-
 import "./style.css"
 
 function CardGame() {

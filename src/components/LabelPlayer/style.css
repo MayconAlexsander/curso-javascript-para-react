@@ -1,0 +1,13 @@
+.header-game {
+    display: flex;
+    max-width: 280px;
+    justify-content: space-between;
+}
+
+#player-1 {
+    color: var(--color-floral-white);
+}
+
+#player-2 {
+    color: var(--color-floral-white);
+}
