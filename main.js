@@ -1,17 +1,10 @@
 import "./src/styles/settings/colors.css"
 import "./src/styles/generic/reset.css"
 import "./src/styles/elements/base.css"
-import LabelPlayer from "./src/components/LabelPlayer"
-import CardGame from "./src/components/CardGame"
+import BoardGame from "./src/objects/BoardGame"
 
 const $root = document.querySelector("#root")
-const $htmlLabelPlayer = LabelPlayer()
-const $htmlCardGame = CardGame()
-
-// Header game
-$root.insertAdjacentHTML("beforebegin", $htmlLabelPlayer)
+const $htmlBoardGame = BoardGame(6)
 
 // Cards
-$root.insertAdjacentHTML("afterbegin", $htmlCardGame + $htmlCardGame)
-$root.insertAdjacentHTML("afterend", $htmlCardGame + $htmlCardGame)
-$root.insertAdjacentHTML("beforebegin", $htmlCardGame + $htmlCardGame)
+$root.insertAdjacentHTML("beforeend", $htmlBoardGame)
